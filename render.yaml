@@ -1,8 +1,7 @@
 services:
   - type: web
     name: pgadmin
-    env: docker
-    image: dpage/pgadmin4:latest
+    env: docker       # tells Render to build your Dockerfile
     dockerCommand: /entrypoint.sh
     envVars:
       - key: PGADMIN_DEFAULT_EMAIL
